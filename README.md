@@ -19,11 +19,11 @@ Global Search deployment contains 3 services: ALM-Fetcher (service which uses AL
   - Set `alm.server.url`, `alm.user`, `alm.password`
 5. Open `services.msc` and start `HP Global Search` and `HP Global Search ES` services.
 6. Verify services up and running & cluster name set as expected:
-  - iRiS: HTTP GET, http://localhost:8080/iris-service/, http://localhost:8080/iris-service/api/health
-  - Fetcher: HTTP GET, http://localhost:8080/alm-fetcher-service/
-  - Elasticsearch: HTTP GET, http://localhost:9200/
+  - iRiS: `curl http://vm-gs:8080/iris-service`, `curl http://vm-gs1:8080/iris-service/api/health`
+  - Fetcher: `curl http://vm-gs:8080/alm-fetcher-service`
+  - Elasticsearch: `curl http://vm-gs:9200`
 7. Do steps 1-6 on 2 or more global-search machines.
 8. Congfigure LB for iRiS services.
-9. Start only 1 ALM fetcher using: HTTP GET, http://localhost:8080/alm-fetcher-service/api/start
+9. Start only 1 ALM fetcher using: `curl http://vm-gs1:8080/alm-fetcher-service/api/start`
 10. Other ALM fetcher should be started on active ALM fetcher failure.
-9. Verify ALM fetcher started to index: HTTP GET, http://localhost:8080/alm-fetcher-service/api/health
+9. Verify ALM fetcher started to index: `curl http://vm-gs2:8080/alm-fetcher-service/api/health`
