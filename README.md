@@ -1,11 +1,10 @@
-# The following is an unofficial workaround!!!
-# High-availability clusters are currently not supported in Global Search.
+# Global Search - Unofficial Workarounds
 
-# Global Search
+Note: High-availability clusters are currently not supported in Global Search. 
 
-Global Search is a powerful engine enabling you to search across all or a specific ALM module.
+Global Search is a powerful engine that enables you to search across all or a specific ALM module.
 
-Global Search deployment contains 3 services: ALM-Fetcher (service which uses ALM REST API in order to fetch data from ALM and index it into Elasticsearch using iRiS), iRiS (Elasticsearch client acts as a mediator) and [Elasticsearch](https://www.elastic.co/).
+Global Search deployment contains 3 services: ALM-Fetcher (a service which uses ALM REST API to fetch data from ALM and index it into Elasticsearch using iRiS), iRiS (Elasticsearch client acts as a mediator), and [Elasticsearch](https://www.elastic.co/).
 
 ### Cluster Installation
 
