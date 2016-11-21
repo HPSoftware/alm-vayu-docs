@@ -26,4 +26,8 @@ Note: High-availability clusters are currently not supported in Global Search.
 8. Congfigure LB for iRiS services.
 9. Start only 1 ALM fetcher using: `curl http://vm-gs1:8080/alm-fetcher-service/api/start`
 10. Other ALM fetcher should be started on active ALM fetcher failure.
-9. Verify ALM fetcher started to index: `curl http://vm-gs2:8080/alm-fetcher-service/api/health`
+9. Verify ALM fetcher started to index: `curl http://vm-gs2:8080/alm-fetcher-service/api/health`.Note: When _nextRuntime has a value other than "-1", this indicates that the indexing process has completed and the project data is ready to be searched with Global Search.
+
+> To prevent network access to Global Search data, make sure that the Global Search services are
+protected behind a firewall, and that only the ALM server and other trusted services (like monitoring tool) can access
+it.
