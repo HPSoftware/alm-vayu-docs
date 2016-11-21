@@ -1,7 +1,5 @@
 # Global Search - Unofficial Workarounds
 
-Note: High-availability clusters are currently not supported in Global Search. 
-
 Global Search is a powerful engine that enables you to search across all or a specific ALM module.
 
 Global Search deployment contains 3 services: ALM-Fetcher (a service which uses ALM REST API to fetch data from ALM and index it into Elasticsearch using iRiS), iRiS (Elasticsearch client acts as a mediator), and [Elasticsearch](https://www.elastic.co/).
@@ -9,6 +7,7 @@ Global Search deployment contains 3 services: ALM-Fetcher (a service which uses 
 See Global Search Overview [Movie](https://www.youtube.com/watch?v=CyRUYm1iNv0&feature=youtu.be).
 
 ### Cluster Installation
+Note: High-availability clusters are currently not supported in Global Search. 
 
 1. Install global-search using installer, but do not configure a valid ALM server (so the ALM fetcher will not start indexing).
 2. Open `services.msc` and stop `HP Global Search` and `HP Global Search ES` services.
