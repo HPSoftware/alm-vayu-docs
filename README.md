@@ -21,7 +21,7 @@ Note: High-availability clusters are currently not supported in Global Search.
 6. Verify services up and running & cluster name set as expected:
   - iRiS: `curl http://vm-gs:8080/iris-service`, `curl http://vm-gs1:8080/iris-service/api/health`
   - Fetcher: `curl http://vm-gs:8080/alm-fetcher-service`
-  - Elasticsearch: `curl http://vm-gs:9200`, `curl http://vm-g:9200/_cluster/health?pretty`, 
+  - Elasticsearch: `curl http://vm-gs:9200`, `curl http://vm-g:9200/_cluster/health?pretty`
 7. Do steps 1-6 on 2 or more global-search machines.
 8. Congfigure LB for iRiS services.
 9. Start only 1 ALM fetcher using: `curl http://vm-gs1:8080/alm-fetcher-service/api/start`
