@@ -6,6 +6,8 @@ Global Search is a powerful engine that enables you to search across all or a sp
 
 Global Search deployment contains 3 services: ALM-Fetcher (a service which uses ALM REST API to fetch data from ALM and index it into Elasticsearch using iRiS), iRiS (Elasticsearch client acts as a mediator), and [Elasticsearch](https://www.elastic.co/).
 
+See [Global Search Overview Movie](https://www.youtube.com/watch?v=CyRUYm1iNv0&feature=youtu.be)
+
 ### Cluster Installation
 
 1. Install global-search using installer, but do not configure a valid ALM server (so the ALM fetcher will not start indexing).
