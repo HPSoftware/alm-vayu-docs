@@ -12,9 +12,9 @@ Note: High-availability clusters are currently not supported in Global Search.
 1. Install global-search using installer, but do not configure a valid ALM server (so the ALM fetcher will not start indexing).
 2. Open `services.msc` and stop `HP Global Search` and `HP Global Search ES` services.
 3. Set Cluster Name to a uniqe name like `hpe-alm-production-global-search-27Oct2016` in:
-  - Elasticsearch: `C:\Program Files\HP\Global Search\elasticsearch-1.7.4\config\elasticsearch.yml` (look for `cluster.name`)
+  - Elasticsearch: `[Global Search]\elasticsearch-1.7.4\config\elasticsearch.yml` (look for `cluster.name`)
   - iRiS: `C:\Windows\System32\config\systemprofile\iris\iris-elasticsearch.properties` (look for `cluster.name`)
-4. Configure ALM fetcher. Open: `C:\Program Files\HP\Global Search\apache-tomcat-8.0.30\webapps\alm-fetcher-service\WEB-INF\classes\alm-fetcher-service.properties`
+4. Configure ALM fetcher. Open: `[Global Search]\apache-tomcat-8.0.30\webapps\alm-fetcher-service\WEB-INF\classes\alm-fetcher-service.properties`
   - Configure ALM fetcher to start manually - set `auto.start=false`
   - Set `alm.server.url`, `alm.user`, `alm.password`
 5. Open `services.msc` and start `HP Global Search` and `HP Global Search ES` services.
