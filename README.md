@@ -23,7 +23,7 @@ Note: High-availability clusters are currently not supported in Global Search.
   - Fetcher: `curl http://vm-gs:8080/alm-fetcher-service`
   - Elasticsearch: `curl http://vm-gs:9200`, `curl http://vm-g:9200/_cluster/health?pretty`
 7. Do steps 1-6 on 2 or more global-search machines.
-8. Congfigure LB for iRiS services.
+8. Configure LB for iRiS services.
 9. Start only 1 ALM fetcher using: `curl http://vm-gs1:8080/alm-fetcher-service/api/start`
 10. Other ALM fetcher should be started on active ALM fetcher failure.
 9. Verify ALM fetcher started to index: `curl http://vm-gs2:8080/alm-fetcher-service/api/health` (Elasticsearch `curl http://vm-g:9200/_cat/indices?v`).Note: When _nextRuntime has a value other than "-1", this indicates that the indexing process has completed and the project data is ready to be searched with Global Search.
