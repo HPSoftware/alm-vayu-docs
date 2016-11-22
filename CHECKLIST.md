@@ -1,6 +1,6 @@
 ### Checklist
 ##### Site Admin
-1. Check conectivity betwin ALM and iRiS service.
+1. Check connectivity between ALM and iRiS service.
 2. Enable global search on projects.
 3. Change log level to debug, run search query in global search and get QC & SA logs.
 
