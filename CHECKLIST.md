@@ -3,6 +3,7 @@
 1. Check connectivity between ALM and iRiS service.
 2. Check which projects are global search enabled.
 3. Change log level to debug, run search query in global search and get QC & SA logs.
+4. Verify that _ALLOW_WEBUI_ACCESS_ set to _Y_ at _Site Configuration_.
 
 ##### Global Search Server
 1. Fetcher, iRiS, Elasticsearch & tomcat logs. Note: In order to change Fetcher & iRiS services' log level to debug, modify `[Global Search]\apache-tomcat-8.0.30\webapps\alm-fetcher-service\WEB-INF\log4j2.properties`, `[Global Search]\apache-tomcat-8.0.30\webapps\iris-service\WEB-INF\log4j2.properties` and restart tomcat service.
