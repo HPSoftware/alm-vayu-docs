@@ -19,8 +19,9 @@ Note: High-availability clusters are currently not supported in Global Search.
   - Set `alm.server.url`, `alm.user`, `alm.password`
 5. Open `services.msc` and start `HP Global Search` and `HP Global Search ES` services.
 6. Verify services up and running & cluster name set as expected:
+  - Tomcat: `curl http://vm-gs2:8080`
   - iRiS: `curl http://vm-gs:8080/iris-service`, `curl http://vm-gs1:8080/iris-service/api/health`
-  - Fetcher: `curl http://vm-gs:8080/alm-fetcher-service`
+  - Fetcher: `curl http://vm-gs2:8080/alm-fetcher-service`, `curl http://vm-gs2:8080/alm-fetcher-service/api/health`
   - Elasticsearch: `curl http://vm-gs:9200`, `curl http://vm-g:9200/_cluster/health?pretty`
 7. Do steps 1-6 on 2 or more global-search machines.
 8. Configure LB for iRiS services.
