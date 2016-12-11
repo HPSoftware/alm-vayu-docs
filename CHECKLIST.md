@@ -1,6 +1,7 @@
 ### Checklist
 ##### Site Admin
-1. Check connectivity between ALM and iRiS service.
+1. Validate that [Global Search enabled](http://alm-help.saas.hpe.com/en/12.53/online_help/Content/Admin/sa_enabling_GS.htm).
+2. Check connectivity between ALM and iRiS service.
 2. Check which projects are global search enabled.
 3. Change log level to debug, run search query in global search and get QC & SA logs.
 4. Verify that _ALLOW_WEBUI_ACCESS_ set to _Y_ at _Site Configuration_.
