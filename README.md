@@ -32,3 +32,5 @@ Note: High-availability clusters are currently not supported in Global Search.
 > To prevent network access to Global Search data, make sure that the Global Search services are
 protected behind a firewall, and that only the ALM server and other trusted services (like monitoring tool) can access
 it.
+
+You can use GUI for keytool and jarsigner  utilities [KeyStore Explorer](http://www.keystore-explorer.org/).
