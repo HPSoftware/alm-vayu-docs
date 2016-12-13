@@ -20,4 +20,4 @@ If you want to clean _Global Search_ data. For example, in case of running `curl
 1. Stop _HP Global Search_ windows service.
 2. Delete all Elasticsearch indexes: `curl -X "DELETE" http://gs-server:9200/*`.
 3. Start _HP Global Search_ windows service.
-4. Wait till the _ALM Fetcher_ index data and run: `curl http://gs-server:9200/_cat/indices?v`.
+4. Wait till the _ALM Fetcher_ index data and run: `curl http://gs-server:9200/_cluster/health`, `curl http://gs-server:9200/_cat/indices?v` in order to verify _Elasticsearch_ state.
