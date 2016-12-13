@@ -15,7 +15,7 @@
 6. Verify ALM fetcher started to index: `curl http://gs-server:8080/alm-fetcher-service/api/health` (Elasticsearch `curl http://gs-server:9200/_cat/indices?v`). Note: When _nextRuntime has a value other than "-1", this indicates that the indexing process has completed and the project data is ready to be searched with Global Search.
 
 ##### Reindex Elasticsearch
-If you want to clean _Global Search_ data. For example, in case of running `curl http://gs-server:9200/_cluster/health` and elasticsearch status is red (means _Elasticsearch_ has data corruption, see [elasticsearch docs](https://www.elastic.co/guide/en/elasticsearch/guide/1.x/_cluster_health.html)) do:
+If you want to clean _Global Search_ data. For example, in case of running `curl http://gs-server:9200/_cluster/health?level=indices` and elasticsearch status is red (means _Elasticsearch_ has data corruption, see [elasticsearch docs](https://www.elastic.co/guide/en/elasticsearch/guide/1.x/_cluster_health.html)) do:
 
 1. Stop _HP Global Search_ windows service.
 2. Delete all Elasticsearch indexes: `curl -X "DELETE" http://gs-server:9200/*`.
