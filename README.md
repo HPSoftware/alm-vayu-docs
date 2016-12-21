@@ -4,7 +4,7 @@ Global Search is a powerful engine that enables you to search across all or a sp
 
 Global Search deployment contains 3 services: ALM-Fetcher (a service which uses ALM REST API to fetch data from ALM and index it into Elasticsearch using iRiS), iRiS (Elasticsearch client acts as a mediator), and [Elasticsearch](https://www.elastic.co/).
 
-See Global Search Overview [Movie](https://www.youtube.com/watch?v=CyRUYm1iNv0&feature=youtu.be).
+See Global Search Overview [movie](https://www.youtube.com/watch?v=CyRUYm1iNv0&feature=youtu.be) & a [blog post](https://community.hpe.com/t5/All-About-the-Apps/Improving-global-search-in-Application-Lifecycle-Management/ba-p/6917095#.WFqUXRt95hF)
 
 ### Cluster Installation
 Note: High-availability clusters are currently not supported in Global Search. 
