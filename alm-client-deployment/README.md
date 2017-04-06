@@ -24,10 +24,8 @@ On the sequencer machine:
 
 - Put the result `alm-client.appv` file on a shared location.
 
-In order to publish the virtual package into a client machine there are 2 options:
-1. Use the client as a stand alone:
-
-  On the client machine:
+##### In order to publish the virtual package into a client machine there are 2 options:
+1. Use the client as a stand alone. On the client machine:
   - Open power shell:
   - Run `Add-AppvClientPackage $ALM_CLIENT.appv` - replace $ALM_CLIENT.appv with the .appv file location, should be shared location or http address.
     - Run `Publish-AppvClientPackage alm-client`
