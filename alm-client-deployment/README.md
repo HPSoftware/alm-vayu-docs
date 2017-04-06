@@ -11,7 +11,7 @@ In order to deploy App-v there is a need for MSDN subscription. Once you have it
 
 ## ALM Client Deployment
 
-In order to convert alm client into an app-v cirtual package, you will need ClientMSIGeneratorSetup, which usually exist on: `\\mydastr01.hpeswlab.net\products\TestDirector\ALMDev\$ALM_VERSION\Archives\$ALM_BUILD\ClientMSIGenerator`
+In order to convert alm client into an app-v virtual package, you will need ClientMSIGeneratorSetup, which usually exist on: `\\mydastr01.hpeswlab.net\products\TestDirector\ALMDev\$ALM_VERSION\Archives\$ALM_BUILD\ClientMSIGenerator`
 After ClientMSIGenerator is installed, go to `C:\Program Files (x86)\Hewlett Packard Enterprise\ALM Client MSI Generator` and run `ClientMSIGenerator` as follows:
 
 ![install](https://github.com/HPSoftware/alm-vayu-docs/blob/master/alm-client-deployment/alm-client-generator.JPG)
