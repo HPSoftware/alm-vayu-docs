@@ -24,9 +24,14 @@ On the sequencer machine:
 
 - Put the result `alm-client.appv` file on a shared location.
 
-On the client machine:
-- Open power shell:
-  - Run `Add-AppvClientPackage $ALM_CLIENT.appv`
-  - Run `Publish-AppvClientPackage alm-client`
-- If successfull - virtual package should be located on `C:\ProgramData\App-V`, in there you will see folders with GUID names, e.g.: `C:\ProgramData\App-V\B1668A0F-7F1A-4909-9EB5-4C5DD5CAB9CF\871F7B65-7771-4A90-AF19-CAD2A39CB125\Root\VFS\Common AppData\HP\ALM-Client\12.55.0.0_952`
-- In order to run alm-client, go to alm-client.exe folder and open command line, run: `ALM-Client.exe TDtesttypes=. AdditionalParams="Brand=ALM&BrandDisplayName=Application Lifecycle Management" ApplicationType="Mercury.TD.Client.UI.Core.Application,QCClient.UI.Core" ConfigurationFile="ALM-Client.exe" PrivatePath="3rdParty" URL=$ALM_SERVER`, replace $ALM_SERVER with your server.
+In order to publish the virtual package into a client machine there are 2 options:
+1. Use the client as a stand alone:
+
+  On the client machine:
+  - Open power shell:
+    - Run `Add-AppvClientPackage $ALM_CLIENT.appv`
+    - Run `Publish-AppvClientPackage alm-client`
+  - If successfull - virtual package should be located on `C:\ProgramData\App-V`, in there you will see folders with GUID names, e.g.: `C:\ProgramData\App-V\B1668A0F-7F1A-4909-9EB5-4C5DD5CAB9CF\871F7B65-7771-4A90-AF19-CAD2A39CB125\Root\VFS\Common AppData\HP\ALM-Client\12.55.0.0_952`
+  - In order to run alm-client, go to alm-client.exe folder and open command line, run: `ALM-Client.exe TDtesttypes=. AdditionalParams="Brand=ALM&BrandDisplayName=Application Lifecycle Management" ApplicationType="Mercury.TD.Client.UI.Core.Application,QCClient.UI.Core" ConfigurationFile="ALM-Client.exe" PrivatePath="3rdParty" URL=$ALM_SERVER`, replace $ALM_SERVER with your server.
+
+2. Use App-V server as a publisher. Follow [documentation](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/how-to-add-or-upgrade-packages-by-using-the-management-console-beta-gb18030).
