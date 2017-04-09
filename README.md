@@ -2,6 +2,6 @@
 
 [Cluster installation](https://github.com/HPSoftware/alm-vayu-docs/blob/master/global-search/CLUSTER_INSTALLATION)
 
-### ALM Client Deployment -App-V
+### ALM Client Deployment
 
-[XXX](https://www.youtube.com/watch?v=CyRUYm1iNv0&feature=youtu.be)
+[App-V](https://github.com/HPSoftware/alm-vayu-docs/tree/master/alm-client-deployment)
